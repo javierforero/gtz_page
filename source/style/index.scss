@@ -1,0 +1,123 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+$black: #111111;
+$background-white: #FAFAFA;
+$dark-blue:#0064BF;
+$light-blue: #0086FF;
+$light-grey: #E6E8EB;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: #111111;
+    height: 100%;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Overpass', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#content {
+    width: inherit;
+    height: inherit;
+    background-color: $background-white;
+}
+
+.white-background {
+    background-color: $background-white;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.row {
+  margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 15px 27px;
+    background-color: #D8D8D8;
+    &-logo-container {
+        flex: 1;
+        img {
+            max-width: 117px;
+        }
+    }
+    &-menu {
+      flex: 4;
+      font-size: .6rem;
+      text-align: left;
+      display: flex;
+      justify-content: flex-end;
+      ul {
+          margin: 0;
+          li {
+            display: inline-block;
+            &:not(:last-child) {
+              margin-right: 36px;
+            }
+            a {
+                font-family: Overpass;
+                font-size: 14px;
+                font-weight: 900;
+                letter-spacing: 2.25px;
+                line-height: 22px;
+                text-align: center;
+                color: #707070;
+            }
+          }
+      }
+    }
+}
+
+.section {
+    min-height: 350px;
+    &-splash {
+        &-img {
+            width: 100%;
+        }
+    }
+}
+
+// general media queries
+
+@media only screen and (max-width: 767px) {
+  .section {
+      &-iconwrap {
+        margin-bottom: 24px;
+      }
+      &-swap {
+        div:first-child {
+          order: 2;
+        }
+        div:nth-child(2) {
+          order: 1;
+        }
+      }
+  }
+}

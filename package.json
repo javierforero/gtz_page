@@ -1,0 +1,65 @@
+{
+  "name": "build-boilerplate-static-es6-sass",
+  "version": "1.1.1",
+  "license": "MIT",
+  "description": "GTZ Site",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "build",
+    "boilerplate",
+    "sass",
+    "es6",
+    "es2015",
+    "static",
+    "transpilaton"
+  ],
+  "author": {
+    "name": "Javier Forero",
+    "url": "http://javierforero.us"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --inline",
+    "prebuild": "rm -rf build",
+    "build": "webpack -p",
+    "postbuild": "gulp images --compress"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^6.4.1",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^0.9.0",
+    "fs": "0.0.1-security",
+    "glob": "^7.0.6",
+    "gulp": "^3.9.1",
+    "gulp-if-else": "^1.0.3",
+    "gulp-imagemin": "^3.0.3",
+    "html-webpack-plugin": "^2.22.0",
+    "node-sass": "^3.9.0",
+    "postcss-loader": "^2.1.1",
+    "sass-loader": "^4.0.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^1.16.5",
+    "yargs": "^5.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "npm": "^5.7.1",
+    "to": "^0.2.9",
+    "update": "^0.7.4",
+    "whatwg-fetch": "^2.0.3"
+  }
+}
