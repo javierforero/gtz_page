@@ -118,7 +118,7 @@ a {
         margin: 0 auto;
         height: 2px;
         width: 17px;
-        background: black;
+        background: #989898;
         opacity: 1;
         left: 0;
         -webkit-transform: rotate(0deg);
@@ -159,15 +159,43 @@ a {
 
   .mobile-drawer {
     display: none;
+    z-index: 9999;
     position: absolute;
     width: auto;
     text-align: left;
     top: 0;
     right: 0;
     height: 100vh;
+    transform: translateX(221.59px);
+    transition: transform 0.5s ease-in-out;
     &-menu {
         padding: 42px 30px;
-        background-color: #B1B1B1
+        background-color: #B1B1B1;
+        li:not(:last-child) {
+            margin-bottom: 27.2px;
+        }
+        li {
+          opacity: 0;
+          transition: opacity 0.8s ease-in-out;
+          transition-delay: 0.3s;
+        }
+        a {
+            font-family: Overpass;
+            font-size: 18px;
+            font-weight: 900;
+            letter-spacing: 2.25px;
+            line-height: 22px;
+            color: #4A4A4A;
+        }
+    }
+    &__slide {
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(0);
+    }
+    &__fade {
+        opacity: 1 !important;
+        transition: opacity 0.8s ease-in-out;
+        transition-delay: 0.3s;
     }
   }
 
@@ -177,6 +205,11 @@ a {
         &-img {
             width: 100%;
         }
+    }
+    &-overview {
+        text-align: center;
+        color:#FFFFFF;
+        background-color: #AF1F2E;
     }
 }
 
