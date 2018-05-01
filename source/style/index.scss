@@ -200,8 +200,29 @@ a {
   }
 
 .section {
-    min-height: 350px;
+    min-height: 300px;
+    &-wrapper {
+        margin: 0 auto;
+        max-width: 780px;
+    }
+    &-title {
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: 3.83px;
+      line-height: 37px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    &-copy {
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: 0.03px;
+      line-height: 21px;
+      text-align: center;
+    }
     &-splash {
+        min-height: 150px;
         &-img {
             width: 100%;
         }
@@ -210,6 +231,24 @@ a {
         text-align: center;
         color:#FFFFFF;
         background-color: #AF1F2E;
+    }
+    &-goals {
+        min-height: 500px;
+        &-img {
+          padding: 0;
+          img {
+              width: 100%;
+              height: 100%;
+          }
+        }
+        &-right-panel {
+            background-color: #000000;
+            color: #FFFFFF;
+            font-family: Montserrat;
+            font-size: 14px;
+            letter-spacing: 0.02px;
+            line-height: 18px;
+        }
     }
 }
 
