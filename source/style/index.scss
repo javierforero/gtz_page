@@ -33,6 +33,10 @@ h1, h2, h3, h4 {
     font-family: 'Overpass', sans-serif;
 }
 
+.col-md-3 {
+    padding: 0;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -221,7 +225,9 @@ a {
     }
     &-wrapper {
         margin: 0 auto;
-        max-width: 780px;
+        max-width: 882px;
+        padding-left: 0;
+        padding-right: 0;
     }
     &-title {
       font-size: 24px;
@@ -230,6 +236,13 @@ a {
       line-height: 37px;
       text-align: center;
       margin-bottom: 20px;
+    }
+    &-subtitle {
+        font-size: 18px;	
+        font-weight: 900;	
+        letter-spacing: 3.83px;	
+        line-height: 28px;	
+        text-align: center;
     }
     &-copy {
       font-family: Montserrat;
@@ -281,21 +294,43 @@ a {
           margin: 0 auto;
         }
     }
+    &-plan {
+        text-align: center;
+        padding: 50px 0;
+        &-options-wrapper {
+          margin: 25px auto;
+        }
+        &-box {
+          position: relative;
+          background: #AF1F2E;
+          color: white;
+          width: 221px;
+          height: 198px;
+          padding: 35px 35px;
+          .button {
+              position: absolute;
+              width: auto;
+              padding: 8px 0;
+              width: 148px;
+              bottom: 20px;
+          }
+        }
+    }
 }
 
 .button {
     display: block;
     width: 200px;
     padding: 15px 0;
-  &-black {
-    border: 1px solid #FFFFFF;
-    color: #FFFFFF;	
     font-family: Overpass;	
     font-size: 10px;	
     font-weight: 900;	
     letter-spacing: 2.55px;	
     line-height: 16px;	
     text-align: center;
+  &-black {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;	
   }
 }
 
