@@ -164,7 +164,7 @@ a {
   .mobile-drawer {
     display: none;
     z-index: 9999;
-    position: absolute;
+    position: fixed;
     width: auto;
     text-align: left;
     top: 0;
@@ -301,6 +301,7 @@ a {
           margin: 25px auto;
         }
         &-box {
+          margin: 0 auto;
           position: relative;
           background: #AF1F2E;
           color: white;
@@ -314,6 +315,30 @@ a {
               width: 148px;
               bottom: 20px;
           }
+        }
+    }
+    &-illinois {
+        background-color: #9B9B9B;
+        color: #FFFFFF;
+        padding: 96px 40px;
+        &-stats-wrapper {
+            margin: 0 auto;
+            max-width: 259px;
+            line-height: 80px;
+        }
+        &-stats-copy {
+            color: #AF1F2E;
+            text-align: center;
+            font-size: 70px;
+            font-weight: 900;
+            font-family: Overpass;
+        }
+        &-stats-subcopy {
+            color: #AF1F2E;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 900;
+            font-family: Overpass;
         }
     }
 }
@@ -369,6 +394,11 @@ a {
         &-left-panel {
           order: 2;
         }
+      }
+      &-plan {
+          &-box {
+              margin-bottom: 25px;
+          } 
       }
   }
 }
