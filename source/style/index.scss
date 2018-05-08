@@ -216,6 +216,14 @@ a {
         letter-spacing: 3.83px;	
         line-height: 37px;
     }
+    &-sm-title {
+        font-family: Overpass;	
+        font-size: 18px;	
+        font-weight: 900;	
+        letter-spacing: 3.83px;	
+        line-height: 28px;	
+        text-align: center;
+    }
     &-md-copy {
         color: #FFFFFF;
         font-family: Montserrat;
@@ -321,6 +329,9 @@ a {
         background-color: #9B9B9B;
         color: #FFFFFF;
         padding: 96px 40px;
+        .row > div {
+            margin-bottom: 61px;
+        }
         &-stats-wrapper {
             margin: 0 auto;
             max-width: 259px;
@@ -339,6 +350,31 @@ a {
             font-size: 40px;
             font-weight: 900;
             font-family: Overpass;
+        }
+    }
+    &-connect {
+        color: #FFFFFF;
+        text-align: center;
+        .col-md-6 {
+            padding: 52px 143px;
+        }
+        .button {
+            margin: 40px auto;
+        }
+        .section-md-copy {
+            margin-top: 40px;
+        }
+        &-volunteer {
+            background-color: #F5AC3A;
+        }
+        &-mailing {
+            background-color: #AF1F2E;
+        }
+        &-contact {
+            background-color: #5DB9BC;
+        }
+        &-donate {
+            background-color: #C14955;
         }
     }
 }
