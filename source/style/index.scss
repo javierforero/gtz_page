@@ -205,16 +205,29 @@ a {
 
 .section {
     min-height: 300px;
+    text-align: center;
+    &-wrapper {
+      max-width: 1110px;
+      margin: 0 auto;
+    }
+    &-separator {
+        height: 1px;
+        width: 100%;
+        background-color: #979797;
+    }
     &-row-max-height {
         max-height: 600px;
     }
     &-md-title {
-        color: #FFFFFF;	
+        	
         font-family: Overpass;	
         font-size: 24px;	
         font-weight: 900;	
         letter-spacing: 3.83px;	
         line-height: 37px;
+        &__white {
+          color: #FFFFFF;
+        }
     }
     &-sm-title {
         font-family: Overpass;	
@@ -231,7 +244,7 @@ a {
         letter-spacing: 0.02px;
         line-height: 18px;
     }
-    &-wrapper {
+    &-copy-container {
         margin: 0 auto;
         max-width: 882px;
         padding-left: 0;
@@ -377,6 +390,39 @@ a {
             background-color: #C14955;
         }
     }
+    &-partners {
+        padding-bottom: 57px;
+        .row > div {
+            padding-top: 57px;
+        }
+        p.section-copy {
+            margin-top: 20px;
+        }
+    }
+    &-funders {
+        padding-bottom: 57px;
+        .row > div {
+            padding-top: 57px;
+        }
+        p.section-copy {
+            margin-top: 20px;
+        }
+    }
+    &-endorsements {
+        background-color: #9B9B9B;
+        color: #FFFFFF;
+        padding: 57px 0;
+        .row {
+          line-height: 60px;
+        }
+        &-quote {
+            color: #AF1F2E;
+            font-size: 24px;	
+            letter-spacing: 0.03px;	
+            line-height: 29px;	
+            text-align: center;
+        }
+    }
 }
 
 .button {
@@ -392,6 +438,12 @@ a {
   &-black {
     border: 1px solid #FFFFFF;
     color: #FFFFFF;	
+  }
+  &-white {
+    margin: 0 auto;
+    border: 1px solid #000000;
+    color: #000000;
+    font-size: 14px;
   }
 }
 
