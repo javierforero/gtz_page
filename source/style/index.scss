@@ -247,8 +247,8 @@ a {
     &-copy-container {
         margin: 0 auto;
         max-width: 882px;
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     &-title {
       font-size: 24px;
@@ -276,6 +276,7 @@ a {
     &-splash {
         min-height: 150px;
         &-img {
+            display: block;
             width: 100%;
         }
     }
@@ -302,7 +303,16 @@ a {
           min-height: 400px;
         }
         &-right-panel {
-            background-color: #000000;
+            background-color: #BF4A57;
+            color: #FFFFFF;
+            font-family: Montserrat;
+            font-size: 14px;
+            letter-spacing: 0.02px;
+            line-height: 18px;
+            padding: 96px 40px 96px 40px;
+        }
+        &-left-panel {
+            background-color: #F3AB47;
             color: #FFFFFF;
             font-family: Montserrat;
             font-size: 14px;
@@ -316,6 +326,8 @@ a {
         }
     }
     &-plan {
+        background-color: #62B9BB;
+        color: #FFFFFF;
         text-align: center;
         padding: 50px 0;
         &-options-wrapper {
@@ -393,19 +405,27 @@ a {
     &-partners {
         padding-bottom: 57px;
         .row > div {
-            padding-top: 57px;
+            padding: 57px 30px 0 30px;
         }
         p.section-copy {
             margin-top: 20px;
+        }
+        .img-fluid {
+            display: block;
+            margin: 0 auto;
         }
     }
     &-funders {
-        padding-bottom: 57px;
+        padding-bottom: 162px;
         .row > div {
-            padding-top: 57px;
+            padding: 57px 30px 0 30px;
         }
         p.section-copy {
             margin-top: 20px;
+        }
+        .img-fluid {
+            display: block;
+            margin: 0 auto;
         }
     }
     &-endorsements {
@@ -460,6 +480,12 @@ a {
 }
 
 @media only screen and (max-width: 767px) {
+    .box-card {
+        flex-basis: 50%;
+    }
+    .plan-card {
+        flex-basis: 50%;   
+    }
   .section {
       &-iconwrap {
         margin-bottom: 24px;
@@ -488,5 +514,18 @@ a {
               margin-bottom: 25px;
           } 
       }
+      &-copy-container, &-goals-right-panel, &-connect .col-md-6 {
+          padding: 35px 30px;
+      }
   }
+}
+@media only screen and (max-width: 503px) {
+    .plan-card {
+        flex-basis: 100%;
+    }
+    .section {
+        &-splash {
+            min-height: 0;
+        }
+    }
 }
