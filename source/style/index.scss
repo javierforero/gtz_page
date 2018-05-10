@@ -38,8 +38,12 @@ h1, h2, h3, h4 {
 }
 
 a {
+    display: block;
     text-decoration: none;
     color: black;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 #content {
@@ -60,11 +64,38 @@ a {
   margin: 0;
 }
 
+.link {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+    &__hover {
+        padding: 8px 0;
+        &::after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 2px;
+          background-color: #F2AA51;
+          transition: width .3s;   
+          margin-top: 9px; 
+        }
+        &:hover::after {
+            width: 100%;
+        }   
+      }
+}
+
 .header {
     display: flex;
     align-items: center;
     padding: 15px 27px;
     background-color: #D8D8D8;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 8888;
     &-logo-container {
         flex: 1;
         img {
@@ -275,6 +306,7 @@ a {
     }
     &-splash {
         min-height: 150px;
+        margin-top: 110.203px;
         &-img {
             display: block;
             width: 100%;
@@ -381,7 +413,7 @@ a {
         color: #FFFFFF;
         text-align: center;
         .col-md-6 {
-            padding: 52px 143px;
+            padding: 52px 52px;
         }
         .button {
             margin: 40px auto;
@@ -447,6 +479,7 @@ a {
 
 .button {
     display: block;
+    margin: 0 auto;
     width: 200px;
     padding: 15px 0;
     font-family: Overpass;	
