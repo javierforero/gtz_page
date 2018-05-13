@@ -220,13 +220,13 @@
                <h3 class="section-sm-title">VOLUNTEER</h3>
                <p class="section-md-copy">Sign up to volunteer to join 
                 one of our workgroups</p>
-                <a href="#" class="button button-black">SIGN UP</a>
+                <button type="button" class="button button-black" data-toggle="modal" data-target="#signUpModal">SIGN UP</a>
             </div>
             <div class="col-md-6 section-connect-mailing">
               <h3 class="section-sm-title">MAILING LIST</h3>
               <p class="section-md-copy">Add your name to our list and stay 
                 up to date on all things Getting to Zero!</p>
-              <a href="#" class="button button-black">GET UPDATES</a>
+              <button type="button" class="button button-black" data-toggle="modal" data-target="#mailingModal">GET UPDATES</button>
             </div>
           </div>
           <div class="row">
@@ -245,6 +245,66 @@
                <a href="#" class="button button-black">BUTTON</a>
             </div>
           </div>
+          <!-- Modals -->
+
+          <!-- sign up modal -->
+            <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-title">
+                    <h3>VOLUNTEER WITH US</h3>
+                    <small>Provide us with your name and email address,
+                        and we’ll contact you about volunteer opportunities.</small>
+                  </div>
+                  <form id="volunteerForm" class="formSubmit">
+                      <div class="modal-body">
+                         <input type="text" 
+                                class="modal-input"
+                                placeholder="Name" required>
+                        <input type="email" 
+                                class="modal-input"
+                                placeholder="Enter email" required>
+                      </div>
+                      <button type="submit"
+                              class="button button-modal">SUBMIT</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- mailing list -->
+            <div class="modal fade" id="mailingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-title">
+                      <h3>JOIN OUR MAILING LIST</h3>
+                      <small>Provide us with your name and email address,
+                          and we’ll keep you up to date on all things Getting to Zero.</small>
+                    </div>
+                    <form id="mailForm" class="formSubmit">
+                      <div class="modal-body">
+                         <input type="text" 
+                                class="modal-input"
+                                placeholder="Name" required>
+                        <input type="email" 
+                                class="modal-input"
+                                placeholder="Enter email" required>
+                      </div>
+                      <button type="submit"
+                              class="button button-modal">SUBMIT</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
         </section>
         <section class="section section-partners section-wrapper" id="partners">
           <div class="row">
@@ -315,5 +375,6 @@
         </section>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>

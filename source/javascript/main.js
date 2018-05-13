@@ -40,6 +40,12 @@ $(document).ready(function(){
       $('.mobile-drawer-menu li').toggleClass('mobile-drawer__fade');
     }
 
-  })
+  });
+
+  $('.formSubmit').on('submit', function(e) {
+    e.preventDefault()
+    console.log('hello');
+  });
+
 
 });
