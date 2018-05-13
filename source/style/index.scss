@@ -90,12 +90,12 @@ a {
     display: flex;
     align-items: center;
     padding: 15px 27px;
-    background-color: #D8D8D8;
+    background-color: #FFFFFF;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    z-index: 8888;
+    z-index: 788;
     &-logo-container {
         flex: 1;
         img {
@@ -383,8 +383,8 @@ a {
         }
     }
     &-illinois {
-        background-color: #9B9B9B;
-        color: #FFFFFF;
+        background-color: #D8D8D8;
+        color: #000000;
         padding: 96px 40px;
         .row > div {
             margin-bottom: 61px;
@@ -461,14 +461,14 @@ a {
         }
     }
     &-endorsements {
-        background-color: #9B9B9B;
+        background-color: #AF1F2E;
         color: #FFFFFF;
         padding: 57px 0;
         .row {
           line-height: 60px;
         }
         &-quote {
-            color: #AF1F2E;
+            color: #FFFFFF;
             font-size: 24px;	
             letter-spacing: 0.03px;	
             line-height: 29px;	
@@ -522,6 +522,7 @@ a {
     &-content {
         border: 0;
         border-radius: 0;
+        min-height: 408px;
     }
     &-dialog {
         max-width: 608px;
@@ -566,6 +567,36 @@ a {
     }
     &-footer {
         padding: 0;
+    }
+    &-success {
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: calc(50% - 56px);
+      opacity: 0;
+      transition: opacity .4s ease-in-out;
+      p {
+        font-family: Montserrat;	
+        font-size: 14px;	
+        letter-spacing: 0.02px;	
+        line-height: 17px;	
+        text-align: center;
+        margin-top: 23px;
+      }
+    }
+    &-form-container {
+        opacity: 1;
+        transition: opacity 0.4s ease-in-out;
+        transition-delay: 5ms;
+    }
+    &-fadein {
+        opacity: 1;
+        transition: opacity 0.6s ease-in-out;
+    }
+    &-fadeout {
+        opacity: 0;
+        transition: opacity 0.4s ease-in-out;
     }
 }
 

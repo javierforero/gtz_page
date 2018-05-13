@@ -43,9 +43,17 @@ $(document).ready(function(){
   });
 
   $('.formSubmit').on('submit', function(e) {
-    e.preventDefault()
-    console.log('hello');
+    e.preventDefault();
+    $('.modal-form-container').addClass('modal-fadeout');
+    $('.modal-success').addClass('modal-fadein');
+    var formId = '#' + e.target.id;
+    $(formId)[0].reset();
   });
 
+  // modal close event
+  $(".modal").on("hidden.bs.modal", function () {
+    $('.modal-form-container').removeClass('modal-fadeout');
+    $('.modal-success').removeClass('modal-fadein');
+  });
 
 });
